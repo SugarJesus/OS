@@ -1,0 +1,22 @@
+@echo 11
+attrib +r +a C:\Kurs\Students\Tree\DO\C\kol*.*
+attrib +r +h C:\Kurs\Students\Tree\DO\C\*Kt.*
+dir C:\Kurs\Students\Tree\DO\C
+attrib -r C:\Kurs\Students\Tree\DO\C\*.*
+dir C:\Kurs\Students\Tree\DO\C
+pause
+@echo 12
+FC C:\Kurs\Students\Tree\DO\C\*.* C:\Kurs\Students\Tree\DO\S\*.* | more
+pause
+@echo 13
+del C:\Kurs\Students\Tree\DO\C
+@echo 14
+@echo
+call C:\Kurs\Students\Tree\dos13(14).bat
+findstr /M "TEXT" C:\Kurs\Students\Tree\DO\C\s*.*
+pause
+@echo 15
+move C:\Kurs\Students\Tree\DO \Tree\BA\K
+pause
+@echo 16
+rd /s C:\Kurs\Students\Tree

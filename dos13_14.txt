@@ -1,0 +1,7 @@
+echo 14
+@echo s1.txt qwerty asdf zxcvbn
+copy con C:\Kurs\Students\Tree\DO\C\s1.txt
+@echo s2.doc qwerty asdf zxcvbn
+copy con C:\Kurs\Students\Tree\DO\C\s2.doc
+@echo sf23.txt qwerty asdf zxcvbn
+copy con C:\Kurs\Students\Tree\DO\C\sf23.txt

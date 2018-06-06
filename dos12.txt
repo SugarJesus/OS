@@ -1,0 +1,31 @@
+@echo 6
+@echo "COPY C:\Kurs\Students\Tree\DO\C\*TXT.doc C:\Kurs\Students\Tree\DO\C\*TXT.dic"
+COPY CON C:\Kurs\Students\Tree\BA\T\copy-01.bat
+CALL C:\Kurs\Students\Tree\BA\T\copy-01.bat
+DIR C:\Kurs\Students\Tree\DO\C
+pause
+@echo 7.1
+@echo "dir C:\Kurs\Students /o:s /p> C:\Kurs\Students\Tree\DO\C\lstTXT.doc"
+COPY CON C:\Kurs\Students\Tree\BA\T\find-01.bat
+pause
+@echo 7.2
+@echo "dir C:\Kurs\Students | find "פאיכמג" >>C:\Kurs\Students\Tree\DO\C\kolTXT.doc"
+COPY CON C:\Kurs\Students\Tree\BA\T\find-02.bat
+pause
+@echo 8
+@echo "REN C:\Kurs\Students\Tree\DO\C\*TXT.dic C:\Kurs\Students\Tree\DO\C\*Kt.doc"
+COPY CON C:\Kurs\Students\Tree\BA\T\renm-01.bat
+pause
+@echo 9.1
+
+COPY CON C:\Kurs\Students\Tree\BA\T\find-03.bat
+DIR /D /B /O:N  C:\Kurs\2-OperSys >>     C:\Kurs\Students\Tree\DO\C\lstKt.doc 
+pause
+echo 9.2
+COPY CON C:\Kurs\Students\Tree\BA\T\find-03.bat
+DIR /D /B /O:N  C:\Kurs\2-OperSys >>     C:\Kurs\Students\Tree\DO\C\lstKt.doc 
+FIND /C /V "*.txt" C:\Kurs\Students\Tree\DO\C\lstKt.doc >> C:\Kurs\Students\Tree\DO\C\lstKt.doc 
+pause
+@echo 10
+xcopy /e C:\Kurs\Students\Tree\DO\C \Tree\DO\S
+pause

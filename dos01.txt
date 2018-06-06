@@ -1,0 +1,55 @@
+cd /d d:
+echo 1)+
+md \Tree\DO\C
+md \Tree\DO\S
+md \Tree\BA\K
+md \Tree\BA\T
+dir tree
+pause
+echo 2)+
+COPY d:\Kurs\2-OperSys\RtOS-14t.xls \Tree\RtOS-14t.xls
+COPY d:\Kurs\2-OperSys\Lit(OS).doc \Tree\Lit(OS).doc
+dir tree
+pause
+echo 3)+
+COPY \Tree\RtOS-14t.xls + \Tree\Lit(OS).doc \Tree\DO\S\pl-lit.doc
+more /e /c /p \Tree\DO\S\pl-lit.doc
+pause
+4)+
+md \tree\ba\k\DO
+XCOPY \Tree\DO \Tree\BA\K\do /e            пытадся сделать через эксклуд DO но не получилось
+5)+
+5.1)
+COPY CON \Tree\DO\C\lstTXT.doc
+5.2)
+EDIT \Tree\DO\C\kolTXT.doc     у меня почемуто не запускается, но в справочнике было написанно что это нужная внешняя команда
+6)+
+echo COPY \Tree\DO\C\*TXT.doc \Tree\DO\C\*TXT.dic > \Tree\BA\T\copy-01.bat
+\tree\ba\t\copy-01.bat
+DIR \Tree\DO\C
+7)
+7.1)
+COPY CON \Tree\BA\T\find-01.bat
+dir d:\kurs\Students\*.txt /o:s /p> Tree\DO\C\lstTXT.doc 
+8)
+COPY CON \Tree\BA\T\renm-01.bat
+REN \Tree\DO\C\*TXT.dic \Tree\DO\C\*Kt.doc
+9.1)
+COPY CON \Tree\BA\T\find-03.bat
+dir d:\kurs\Students\ /a:d /o:n /p>Tree\DO\C\lstKt.doc
+10)+
+xcopy /e \Tree\DO\C \Tree\DO\S
+11)+
+attrib +r +a \Tree\DO\C\kol*.*
+attrib +r +h \Tree\DO\C\*Kt.*
+dir /h \Tree\DO\C
+attrib -r \Tree\DO\C\*.*
+dir \Tree\DO\C
+12)+
+fc \Tree\DO\C \Tree\DO\S
+13)
+del \Tree\DO\C
+15)
+move \Tree\DO \Tree\BA\K
+16)+
+rd /s \Tree

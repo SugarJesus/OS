@@ -1,0 +1,25 @@
+echo 1
+mkdir C:\Kurs\Students\Tree\DO\C 
+mkdir C:\Kurs\Students\Tree\DO\S
+mkdir C:\Kurs\Students\Tree\BA\K
+mkdir C:\Kurs\Students\Tree\BA\T
+dir C:\Kurs\Students\Tree
+pause
+echo 2
+COPY C:\Kurs\2-OperSys\RtOS-14t.xls C:\Kurs\Students\Tree\RtOS-14t.xls
+COPY C:\Kurs\2-OperSys\Lit(OS).doc C:\Kurs\Students\Tree\Lit(OS).doc
+pause
+echo 3
+COPY C:\Kurs\Students\Tree\RtOS-14t.xls + C:\Kurs\Students\Tree\Lit(OS).doc C:\Kurs\Students\Tree\DO\S\pl-lit.doc
+cd C:\Kurs\Students\Tree\DO\S\
+more /e /c /p C:\Kurs\Students\Tree\DO\S\pl-lit.doc
+pause
+echo 4
+XCOPY /E /H C:\Kurs\Students\Tree\DO\ C:\Kurs\Students\Tree\BA\K\
+pause
+echo 5.1
+COPY CON C:\Kurs\Students\Tree\DO\C\lstTXT.doc
+pause
+echo 5.2
+EDIT C:\Kurs\Students\\Tree\DO\C\kolTXT.doc
+pause
